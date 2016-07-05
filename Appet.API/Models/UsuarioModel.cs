@@ -1,5 +1,6 @@
 ﻿using Appet.API.Models.Interfaces;
 using System;
+using System.Collections.Generic;
 
 namespace Appet.API.Models
 {
@@ -11,5 +12,6 @@ namespace Appet.API.Models
         public string Senha { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime UltimaAtualizacao { get; set; }
+        public virtual ICollection<PetModel> Pets { get; set; }
     }
 }

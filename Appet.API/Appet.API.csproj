@@ -187,6 +187,10 @@
     <Compile Include="Models\EstadoModel.cs" />
     <Compile Include="Models\IdentificacaoModel.cs" />
     <Compile Include="Models\Interfaces\IAuditoria.cs" />
+    <Compile Include="Models\Mappings\CidadeMap.cs" />
+    <Compile Include="Models\Mappings\EstadoMap.cs" />
+    <Compile Include="Models\Mappings\PaisMap.cs" />
+    <Compile Include="Models\Mappings\PetMap.cs" />
     <Compile Include="Models\Mappings\UsuarioMap.cs" />
     <Compile Include="Models\PaisModel.cs" />
     <Compile Include="Models\PetModel.cs" />

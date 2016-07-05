@@ -10,6 +10,7 @@ namespace Appet.API.Providers
         }
 
         public DbSet<UsuarioModel> UsuarioModels { get; set; }
+        public DbSet<PetModel> PetModels { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

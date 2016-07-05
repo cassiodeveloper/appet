@@ -10,5 +10,6 @@
         public CidadeModel Cidade { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
+        public virtual EstabelecimentoModel Estabelecimento { get; set; }
     }
 }

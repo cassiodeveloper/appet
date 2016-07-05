@@ -14,5 +14,6 @@ namespace Appet.API.Models
         public string WebSite { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime UltimaAtualizacao { get; set; }
+        public virtual UsuarioModel Usuario { get; set; }
     }
 }
