@@ -7,6 +7,7 @@ namespace Appet.API.Providers
     {   
         public APIContext() : base("name=APIContext")
         {
+            Configuration.ProxyCreationEnabled = false;
         }
 
         public DbSet<UsuarioModel> UsuarioModels { get; set; }

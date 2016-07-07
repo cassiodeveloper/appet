@@ -12,7 +12,8 @@ namespace Appet.API.Models.Mappings
 
             Property(x => x.Nome).HasMaxLength(50).IsRequired();
 
-            HasOptional(x => x.Endereco).WithRequired(x => x.Estabelecimento);
+            //HasOptional(x => x.Endereco)
+            //    .WithRequired(x => x.Estabelecimento);
         }
     }
 }

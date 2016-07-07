@@ -66,3 +66,4 @@ C:\Users\mtzcpd1053\Documents\src\appet\Appet.Web\Appet.Web\bin\Microsoft.Owin.S
 C:\Users\mtzcpd1053\Documents\src\appet\Appet.Web\Appet.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\mtzcpd1053\Documents\src\appet\Appet.Web\Appet.Web\obj\Debug\Appet.Web.dll
 C:\Users\mtzcpd1053\Documents\src\appet\Appet.Web\Appet.Web\obj\Debug\Appet.Web.pdb
+C:\Users\mtzcpd1053\Documents\src\appet\Appet.Web\Appet.Web\obj\Debug\Appet.Web.csprojResolveAssemblyReference.cache

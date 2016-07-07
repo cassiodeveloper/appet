@@ -2,6 +2,7 @@
 
 namespace Appet.API.Models
 {
+    [Serializable]
     public class PetModel : IdentificacaoModel
     {
         public string Nome { get; set; }
@@ -12,5 +13,6 @@ namespace Appet.API.Models
         public int Idade { get; set; }
         public UsuarioModel Usuario { get; set; }
         public string Observacao { get; set; }
+        //public virtual ConsultaModel Consulta { get; set; }
     }
 }
