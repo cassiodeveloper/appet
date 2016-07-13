@@ -5,7 +5,7 @@ namespace Appet.API.Models
 {
     [Serializable]
     [DataContract]
-    public class IdentificacaoModel
+    public class Identificacao
     {
         [DataMember]
         public int Id { get; set; }

@@ -2,7 +2,7 @@
 
 namespace Appet.API.Models.Mappings
 {
-    public class PaisMap : EntityTypeConfiguration<PaisModel>
+    public class PaisMap : EntityTypeConfiguration<Pais>
     {
         public PaisMap()
         {

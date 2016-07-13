@@ -2,7 +2,7 @@
 
 namespace Appet.API.Models.Mappings
 {
-    public class EnderecoMap : EntityTypeConfiguration<EnderecoModel>
+    public class EnderecoMap : EntityTypeConfiguration<Endereco>
     {
         public EnderecoMap()
         {

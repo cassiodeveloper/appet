@@ -3,10 +3,10 @@
 namespace Appet.API.Models
 {
     [Serializable]
-    public class TelefoneModel : IdentificacaoModel
+    public class Telefone : Identificacao
     {
         public int DDD { get; set; }
 
-        public int Telefone { get; set; }
+        public int Numero { get; set; }
     }
 }

@@ -3,10 +3,10 @@
 namespace Appet.API.Models
 {
     [Serializable]
-    public class AvaliacaoModel : IdentificacaoModel
+    public class Avaliacao : Identificacao
     {
-        public EstabelecimentoModel Estabelecimento { get; set; }
-        public UsuarioModel Usuario { get; set; }
+        public Estabelecimento Estabelecimento { get; set; }
+        public Usuario Usuario { get; set; }
         public int Atendimento { get; set; }
         public int Localizacao { get; set; }
         public int Qualidade { get; set; }

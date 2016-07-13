@@ -6,7 +6,7 @@ using System.Web;
 namespace Appet.API.Models
 {
     [Serializable]
-    public class TipoModel : IdentificacaoModel
+    public class Tipo : Identificacao
     {
         public string Nome { get; set; }
     }

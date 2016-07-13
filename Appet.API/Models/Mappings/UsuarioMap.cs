@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Appet.API.Models.Mappings
 {
-    public class UsuarioMap : EntityTypeConfiguration<UsuarioModel>
+    public class UsuarioMap : EntityTypeConfiguration<Usuario>
     {
         public UsuarioMap()
         {

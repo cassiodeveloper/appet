@@ -10,21 +10,21 @@ using System.Web.Http.Description;
 
 namespace Appet.API.Controllers
 {
-    public class UsuarioModelsController : ApiController
+    public class UsuarioController : ApiController
     {
         private APIContext db = new APIContext();
 
-        // GET: api/UsuarioModels
-        public IQueryable<UsuarioModel> GetUsuarioModels()
+        // GET: api/Usuario
+        public IQueryable<Usuario> GetUsuarios()
         {
-            return db.UsuarioModels;
+            return db.Usuario;
         }
 
-        // GET: api/UsuarioModels/5
-        [ResponseType(typeof(UsuarioModel))]
-        public async Task<IHttpActionResult> GetUsuarioModel(int id)
+        // GET: api/Usuario/5
+        [ResponseType(typeof(Usuario))]
+        public async Task<IHttpActionResult> GetUsuario(int id)
         {
-            UsuarioModel usuarioModel = await db.UsuarioModels.FindAsync(id);
+            Usuario usuarioModel = await db.Usuario.FindAsync(id);
             if (usuarioModel == null)
             {
                 return NotFound();
@@ -33,9 +33,9 @@ namespace Appet.API.Controllers
             return Ok(usuarioModel);
         }
 
-        // PUT: api/UsuarioModels/5
+        // PUT: api/Usuario/5
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutUsuarioModel(int id, UsuarioModel usuarioModel)
+        public async Task<IHttpActionResult> PutUsuario(int id, Usuario usuarioModel)
         {
             if (!ModelState.IsValid)
             {
@@ -68,32 +68,32 @@ namespace Appet.API.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/UsuarioModels
-        [ResponseType(typeof(UsuarioModel))]
-        public async Task<IHttpActionResult> PostUsuarioModel(UsuarioModel usuarioModel)
+        // POST: api/Usuario
+        [ResponseType(typeof(Usuario))]
+        public async Task<IHttpActionResult> PostUsuario(Usuario usuarioModel)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.UsuarioModels.Add(usuarioModel);
+            db.Usuario.Add(usuarioModel);
             await db.SaveChangesAsync();
 
             return CreatedAtRoute("DefaultApi", new { id = usuarioModel.Id }, usuarioModel);
         }
 
-        // DELETE: api/UsuarioModels/5
-        [ResponseType(typeof(UsuarioModel))]
-        public async Task<IHttpActionResult> DeleteUsuarioModel(int id)
+        // DELETE: api/Usuario/5
+        [ResponseType(typeof(Usuario))]
+        public async Task<IHttpActionResult> DeleteUsuario(int id)
         {
-            UsuarioModel usuarioModel = await db.UsuarioModels.FindAsync(id);
+            Usuario usuarioModel = await db.Usuario.FindAsync(id);
             if (usuarioModel == null)
             {
                 return NotFound();
             }
 
-            db.UsuarioModels.Remove(usuarioModel);
+            db.Usuario.Remove(usuarioModel);
             await db.SaveChangesAsync();
 
             return Ok(usuarioModel);
@@ -110,7 +110,7 @@ namespace Appet.API.Controllers
 
         private bool UsuarioModelExists(int id)
         {
-            return db.UsuarioModels.Count(e => e.Id == id) > 0;
+            return db.Usuario.Count(e => e.Id == id) > 0;
         }
     }
 }

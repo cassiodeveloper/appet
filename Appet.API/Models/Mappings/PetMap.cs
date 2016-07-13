@@ -2,7 +2,7 @@
 
 namespace Appet.API.Models.Mappings
 {
-    public class PetMap : EntityTypeConfiguration<PetModel>
+    public class PetMap : EntityTypeConfiguration<Pet>
     {
         public PetMap()
         {

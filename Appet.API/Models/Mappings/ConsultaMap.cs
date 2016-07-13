@@ -2,7 +2,7 @@
 
 namespace Appet.API.Models.Mappings
 {
-    public class ConsultaMap : EntityTypeConfiguration<ConsultaModel>
+    public class ConsultaMap : EntityTypeConfiguration<Consulta>
     {
         public ConsultaMap()
         {

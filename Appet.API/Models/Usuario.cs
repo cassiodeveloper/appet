@@ -7,7 +7,7 @@ namespace Appet.API.Models
 {
     [Serializable]
     [DataContract]
-    public class UsuarioModel : IdentificacaoModel, IAuditoria
+    public class Usuario : Identificacao, IAuditoria
     {
         [DataMember]
         public string Nome { get; set; }
@@ -21,7 +21,7 @@ namespace Appet.API.Models
         public DateTime DataCadastro { get; set; }
         [DataMember]
         public DateTime UltimaAtualizacao { get; set; }
-        public virtual ICollection<PetModel> Pets { get; set; }
-        public virtual ICollection<AvaliacaoModel> Avaliacoes { get; set; }
+        public virtual ICollection<Pet> Pets { get; set; }
+        public virtual ICollection<Avaliacao> Avaliacoes { get; set; }
     }
 }

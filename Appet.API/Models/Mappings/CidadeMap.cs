@@ -2,7 +2,7 @@
 
 namespace Appet.API.Models.Mappings
 {
-    public class CidadeMap : EntityTypeConfiguration<CidadeModel>
+    public class CidadeMap : EntityTypeConfiguration<Cidade>
     {
         public CidadeMap()
         {

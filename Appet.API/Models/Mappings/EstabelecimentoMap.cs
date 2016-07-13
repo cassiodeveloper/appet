@@ -2,7 +2,7 @@
 
 namespace Appet.API.Models.Mappings
 {
-    public class EstabelecimentoMap : EntityTypeConfiguration<EstabelecimentoModel>
+    public class EstabelecimentoMap : EntityTypeConfiguration<Estabelecimento>
     {
         public EstabelecimentoMap()
         {

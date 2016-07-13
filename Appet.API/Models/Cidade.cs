@@ -3,9 +3,9 @@
 namespace Appet.API.Models
 {
     [Serializable]
-    public class CidadeModel : IdentificacaoModel
+    public class Cidade : Identificacao
     {
         public string Nome { get; set; }
-        public EstadoModel Estado { get; set; }
+        public Estado Estado { get; set; }
     }
 }

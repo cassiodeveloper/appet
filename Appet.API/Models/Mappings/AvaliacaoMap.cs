@@ -2,7 +2,7 @@
 
 namespace Appet.API.Models.Mappings
 {
-    public class AvaliacaoMap : EntityTypeConfiguration<AvaliacaoModel>
+    public class AvaliacaoMap : EntityTypeConfiguration<Avaliacao>
     {
         public AvaliacaoMap()
         {

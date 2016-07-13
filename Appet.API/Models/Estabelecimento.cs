@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Appet.API.Models
 {
     [Serializable]
-    public class EstabelecimentoModel : IdentificacaoModel, IAuditoria
+    public class Estabelecimento : Identificacao, IAuditoria
     {
         public string Nome { get; set; }
         //public EnderecoModel Endereco { get; set; }
@@ -15,6 +15,6 @@ namespace Appet.API.Models
         public DateTime UltimaAtualizacao { get; set; }
         //public virtual UsuarioModel Usuario { get; set; }
         //public virtual ConsultaModel Consulta { get; set; }
-        public virtual ICollection<AvaliacaoModel> Avaliacoes { get; set; }
+        public virtual ICollection<Avaliacao> Avaliacoes { get; set; }
     }
 }

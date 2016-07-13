@@ -2,7 +2,7 @@
 
 namespace Appet.API.Models.Mappings
 {
-    public class EstadoMap : EntityTypeConfiguration<EstadoModel>
+    public class EstadoMap : EntityTypeConfiguration<Estado>
     {
         public EstadoMap()
         {
