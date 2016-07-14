@@ -19,6 +19,8 @@ namespace Appet.API.Providers
 
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<Pet> Pet { get; set; }
+        public DbSet<Estabelecimento> Estabelecimento { get; set; }
+        public DbSet<Endereco> Endereco { get; set; }
 
         #endregion
 
@@ -26,6 +28,7 @@ namespace Appet.API.Providers
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            Database.SetInitializer<APIContext>(null);
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 

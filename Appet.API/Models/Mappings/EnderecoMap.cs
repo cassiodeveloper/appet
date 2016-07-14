@@ -17,7 +17,6 @@ namespace Appet.API.Models.Mappings
             Property(x => x.Longitude).IsRequired();
             Property(x => x.Numero).HasMaxLength(5).IsRequired();
 
-
             //HasRequired(x => x.Estado)
             //   .WithMany(x => x.Cidades)
             //   .Map(m => m.MapKey("CidadeId"));

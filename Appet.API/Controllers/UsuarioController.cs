@@ -38,14 +38,10 @@ namespace Appet.API.Controllers
         public async Task<IHttpActionResult> PutUsuario(int id, Usuario usuarioModel)
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
 
             if (id != usuarioModel.Id)
-            {
                 return BadRequest();
-            }
 
             db.Entry(usuarioModel).State = EntityState.Modified;
 
@@ -56,13 +52,9 @@ namespace Appet.API.Controllers
             catch (DbUpdateConcurrencyException)
             {
                 if (!UsuarioModelExists(id))
-                {
                     return NotFound();
-                }
                 else
-                {
                     throw;
-                }
             }
 
             return StatusCode(HttpStatusCode.NoContent);
@@ -73,11 +65,10 @@ namespace Appet.API.Controllers
         public async Task<IHttpActionResult> PostUsuario(Usuario usuarioModel)
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
 
             db.Usuario.Add(usuarioModel);
+
             await db.SaveChangesAsync();
 
             return CreatedAtRoute("DefaultApi", new { id = usuarioModel.Id }, usuarioModel);
@@ -88,12 +79,12 @@ namespace Appet.API.Controllers
         public async Task<IHttpActionResult> DeleteUsuario(int id)
         {
             Usuario usuarioModel = await db.Usuario.FindAsync(id);
+
             if (usuarioModel == null)
-            {
                 return NotFound();
-            }
 
             db.Usuario.Remove(usuarioModel);
+
             await db.SaveChangesAsync();
 
             return Ok(usuarioModel);
@@ -102,9 +93,8 @@ namespace Appet.API.Controllers
         protected override void Dispose(bool disposing)
         {
             if (disposing)
-            {
                 db.Dispose();
-            }
+
             base.Dispose(disposing);
         }
 
